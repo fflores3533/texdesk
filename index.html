@@ -50,45 +50,136 @@
       </p>
     </section>
 
-<section class="mb-20">
-  <h2 class="text-3xl font-bold text-blue-400 border-l-4 border-blue-400 pl-4 mb-8">Pricing</h2>
-  <div class="grid md:grid-cols-3 gap-6">
-    <div class="bg-gray-800 rounded-xl p-6 text-center">
-      <h3 class="text-xl font-bold mb-4">Starter</h3>
-      <p class="text-4xl font-extrabold text-blue-400 mb-4">$99/mo</p>
-      <ul class="space-y-2 text-sm">
-        <li>✔ Support for up to 5 users</li>
-        <li>✔ Remote support during business hours</li>
-        <li>✔ Microsoft 365 / Google Workspace assistance</li>
-        <li>✔ Initial setup for workstations & email accounts</li>
-        <li>✔ Endpoint monitoring (CPU, memory, disk alerts)</li>
-        <li>✔ Printer & Wi-Fi troubleshooting</li>
-      </ul>
+<section class="pricing" id="pricing">
+  <style>
+    .pricing{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;padding:56px 20px;background:#0b1220;color:#e8eefc}
+    .pricing .wrap{max-width:1100px;margin:0 auto}
+    .pricing h2{font-size:34px;line-height:1.2;margin:0 0 10px}
+    .pricing p.lede{color:#b9c7e6;margin:0 0 26px;max-width:760px}
+    .pricing .grid{display:grid;gap:18px;grid-template-columns:repeat(12,1fr)}
+    .pricing .card{grid-column:span 12;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .pricing .card h3{margin:0 0 8px;font-size:22px}
+    .pricing .tag{display:inline-block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#b9c7e6;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;margin-bottom:12px}
+    .pricing .price{font-size:40px;font-weight:800;margin:6px 0 4px}
+    .pricing .sub{color:#b9c7e6;margin:0 0 16px}
+    .pricing ul{margin:0;padding:0 0 0 18px;color:#d7e2ff}
+    .pricing li{margin:8px 0}
+    .pricing .fine{color:#b9c7e6;font-size:13px;margin-top:14px}
+    .pricing .ctaRow{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+    .pricing a.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:12px;padding:12px 14px}
+    .pricing a.primary{background:#4aa3ff;color:#08101f}
+    .pricing a.ghost{background:transparent;color:#e8eefc;border:1px solid rgba(255,255,255,.22)}
+    .pricing .highlight{border-color:rgba(74,163,255,.65);background:linear-gradient(180deg, rgba(74,163,255,.14), rgba(255,255,255,.06))}
+    .pricing .twoCol{display:grid;gap:18px;grid-template-columns:repeat(12,1fr);margin-top:18px}
+    @media (min-width:860px){
+      .pricing .card{grid-column:span 4}
+      .pricing .card.wide{grid-column:span 12}
+    }
+  </style>
+
+  <div class="wrap">
+    <h2>Texdesk Pricing</h2>
+    <p class="lede">
+      Choose on-demand support for immediate help, or a monthly Care Plan for predictable coverage.
+      No long-term contracts required.
+    </p>
+
+    <!-- On-demand -->
+    <div class="grid">
+      <div class="card wide">
+        <span class="tag">On-Demand Support</span>
+        <h3>Pay as you go</h3>
+        <div class="twoCol">
+          <div class="card" style="grid-column:span 12;">
+            <div style="display:flex;flex-wrap:wrap;gap:22px;align-items:flex-end;">
+              <div>
+                <div class="price">$95<span style="font-size:16px;font-weight:600;color:#b9c7e6;">/hr</span></div>
+                <p class="sub">Remote support</p>
+              </div>
+              <div>
+                <div class="price">$125<span style="font-size:16px;font-weight:600;color:#b9c7e6;">/hr</span></div>
+                <p class="sub">Onsite support</p>
+              </div>
+              <div style="flex:1;min-width:260px;">
+                <ul>
+                  <li>Wi-Fi and connectivity troubleshooting</li>
+                  <li>Printer setup &amp; fixes</li>
+                  <li>Email issues (Outlook/Gmail/M365/Google)</li>
+                  <li>PC/Mac tune-ups, cleanup, and performance issues</li>
+                  <li>New device setup (computers, phones, smart TVs)</li>
+                </ul>
+                <p class="fine">1-hour minimum. Additional time billed in 15-minute increments.</p>
+              </div>
+            </div>
+
+            <div class="ctaRow">
+              <a class="btn primary" href="#contact">Request Support</a>
+              <a class="btn ghost" href="#services">See Services</a>
+            </div>
+
+            <p class="fine">
+              Best-effort service. Client is responsible for backups. Texdesk is not liable for pre-existing issues or data loss.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Monthly Care Plans -->
+      <div class="card">
+        <span class="tag">Monthly Care Plan</span>
+        <h3>Starter Care</h3>
+        <div class="price">$149<span style="font-size:16px;font-weight:600;color:#b9c7e6;">/mo</span></div>
+        <p class="sub">Great for home offices &amp; very small teams</p>
+        <ul>
+          <li>Up to <strong>2 hours</strong> of remote support/month</li>
+          <li>Wi-Fi, printers, email, and device troubleshooting</li>
+          <li>Microsoft 365 / Google Workspace assistance</li>
+          <li>Priority scheduling</li>
+        </ul>
+        <p class="fine"><strong>Additional hours:</strong> $85/hr</p>
+        <div class="ctaRow">
+          <a class="btn primary" href="#contact">Get Starter Care</a>
+        </div>
+      </div>
+
+      <div class="card highlight">
+        <span class="tag">Most Popular</span>
+        <h3>Growth Care</h3>
+        <div class="price">$299<span style="font-size:16px;font-weight:600;color:#b9c7e6;">/mo</span></div>
+        <p class="sub">For small businesses that want consistency</p>
+        <ul>
+          <li>Up to <strong>5 hours</strong> of support/month (remote or onsite)</li>
+          <li>User onboarding/offboarding support</li>
+          <li>Patch/update guidance &amp; workstation health checks</li>
+          <li>Email &amp; account security help (MFA, recoveries)</li>
+        </ul>
+        <p class="fine"><strong>Additional hours:</strong> $75/hr</p>
+        <div class="ctaRow">
+          <a class="btn primary" href="#contact">Get Growth Care</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag">Monthly Care Plan</span>
+        <h3>Business Care</h3>
+        <div class="price">Custom</div>
+        <p class="sub">For 10+ users or multi-site needs</p>
+        <ul>
+          <li>Tailored coverage based on users, devices, and hours needed</li>
+          <li>Standardized onboarding workflows &amp; policies</li>
+          <li>Optional after-hours coverage (quoted separately)</li>
+          <li>Ideal for growing teams that need scalable support</li>
+        </ul>
+        <p class="fine">We’ll scope your environment and send a straightforward quote.</p>
+        <div class="ctaRow">
+          <a class="btn primary" href="#contact">Request a Quote</a>
+        </div>
+      </div>
     </div>
-    <div class="bg-gray-800 rounded-xl p-6 text-center">
-      <h3 class="text-xl font-bold mb-4">Pro</h3>
-      <p class="text-4xl font-extrabold text-blue-400 mb-4">$179/mo</p>
-      <ul class="space-y-2 text-sm">
-        <li>✔ Support for up to 10 users</li>
-        <li>✔ Priority-level response times and After-Hours support</li>
-        <li>✔ Full onboarding/offboarding for staff</li>
-        <li>✔ Patch management & Windows updates</li>
-        <li>✔ Email security & spam filtering support</li>
-        <li>✔ M365/Google: license management & user roles</li>
-      </ul>
-    </div>
-    <div class="bg-gray-800 rounded-xl p-6 text-center">
-      <h3 class="text-xl font-bold mb-4">Business</h3>
-      <p class="text-4xl font-extrabold text-blue-400 mb-4">Starts at $279/mo</p>
-      <ul class="space-y-2 text-sm">
-        <li>✔ Support for 15+ users</li>
-        <li>✔ Custom onboarding workflows & policies</li>
-        <li>✔ Full environment audits & monthly reports</li>
-        <li>✔ Remote device management & app deployment</li>
-        <li>✔ MFA policy & security configuration</li>
-        <li>✔ Dedicated monthly strategy call</li>
-      </ul>
-    </div>
+
+    <p class="fine" style="margin-top:18px;">
+      Need something simple? Start with On-Demand and upgrade to a Care Plan anytime.
+    </p>
   </div>
 </section>
 
