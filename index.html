@@ -275,5 +275,46 @@
     .animate-fade-in-up {animation: fade-in-up 1s ease-out;}
     .animate-fade-in {animation: fade-in-up 1.2s ease-in;}
   </style>
+
+  <!-- Sticky Call Button -->
+<style>
+  .sticky-call {
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #4aa3ff;
+    color: #08101f;
+    padding: 14px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 12px 30px rgba(0,0,0,.35);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+
+  .sticky-call:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 36px rgba(0,0,0,.45);
+  }
+
+  .sticky-call span {
+    display: none;
+  }
+
+  @media (min-width: 640px) {
+    .sticky-call span {
+      display: inline;
+    }
+  }
+</style>
+
+<a href="tel:12149973935" class="sticky-call" aria-label="Call TexDesk">
+  📞 <span>Call or Text (214) 997-3935</span>
+</a>
+
 </body>
 </html>
