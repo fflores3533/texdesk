@@ -3,7 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TexDesk | Fast, Friendly IT Support</title>
+
+  <!-- SEO -->
+  <title>Computer Repair & IT Support in DFW | TexDesk</title>
+  <meta name="description" content="Same-day computer repair, Wi-Fi troubleshooting, printer setup, and remote IT support across DFW. Clear pricing, no contracts, and fast help for homes and small businesses. Call or text TexDesk." />
+  <link rel="canonical" href="https://texdesk.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Computer Repair & IT Support in DFW | TexDesk" />
+  <meta property="og:description" content="Same-day computer repair, Wi-Fi troubleshooting, printer setup, and remote IT support across DFW. Clear pricing, no contracts, and fast help for homes and small businesses." />
+  <meta property="og:url" content="https://texdesk.com/" />
+  <meta property="og:type" content="website" />
 
   <!-- Font + Tailwind -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -16,6 +26,108 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-17891011978');
+  </script>
+
+  <!-- LocalBusiness Schema (Allen-based, DFW-wide) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "TexDesk",
+    "url": "https://texdesk.com/",
+    "telephone": "+12149973935",
+    "email": "info@texdesk.com",
+    "areaServed": [
+      "Allen, TX",
+      "Plano, TX",
+      "McKinney, TX",
+      "Frisco, TX",
+      "Richardson, TX",
+      "Addison, TX",
+      "Carrollton, TX",
+      "Farmers Branch, TX",
+      "Garland, TX",
+      "Rowlett, TX",
+      "Sachse, TX",
+      "Wylie, TX",
+      "Murphy, TX",
+      "Parker, TX",
+      "Lucas, TX",
+      "Melissa, TX",
+      "Anna, TX",
+      "The Colony, TX",
+      "Prosper, TX",
+      "Celina, TX",
+      "Dallas, TX",
+      "North Dallas, TX",
+      "East Dallas, TX",
+      "Lake Highlands, TX",
+      "Irving, TX",
+      "Las Colinas, TX",
+      "Coppell, TX",
+      "Grapevine, TX",
+      "Southlake, TX",
+      "Flower Mound, TX",
+      "Lewisville, TX",
+      "Denton, TX",
+      "Arlington, TX",
+      "Grand Prairie, TX",
+      "Euless, TX",
+      "Bedford, TX",
+      "Hurst, TX",
+      "North Richland Hills, TX",
+      "Fort Worth, TX"
+    ],
+    "serviceType": [
+      "Computer Repair",
+      "Wi-Fi Troubleshooting",
+      "Printer Setup and Troubleshooting",
+      "Remote IT Support",
+      "Small Business IT Support"
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How fast do you respond?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually quick during business hours. If it’s urgent, calling is the fastest option."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you support Mac and Windows?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We support Windows, macOS, and mixed environments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you require contracts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. On-demand support is available anytime. Monthly care plans are optional."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Remote or on-site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We recommend the quickest option. You can choose remote support or on-site service."
+        }
+      }
+    ]
+  }
   </script>
 
   <style>
@@ -205,13 +317,13 @@
       <div class="grid lg:grid-cols-2 gap-10 items-center">
         <div class="reveal">
           <div class="flex flex-wrap items-center gap-2 mb-4">
-            <span class="chip">Dallas / DFW</span>
+            <span class="chip">Allen-based • DFW-wide</span>
             <span class="chip">Homes + Small Business</span>
             <span class="chip">No contracts</span>
           </div>
 
           <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight">
-            Tech problems?
+            Computer repair & IT support in DFW
             <span class="block" style="background: linear-gradient(90deg, var(--a2), var(--a3), var(--a4));
               -webkit-background-clip:text; background-clip:text; color: transparent;">
               Fixed fast.
@@ -224,24 +336,33 @@
           </p>
 
           <div class="mt-8 flex flex-wrap gap-3">
-            <!-- IMPORTANT: call/text opens dialer/SMS -->
             <a class="btn btn-primary" href="tel:+12149973935">📞 Call (214) 997-3935</a>
             <a class="btn btn-secondary" href="sms:+12149973935?&body=Hi%20TexDesk%20-%20I%20need%20help%20with%20">💬 Text for Support</a>
             <a class="btn btn-ghost" href="#contact">✉️ Send a Message</a>
           </div>
-          <!-- Trust line -->
-<div class="mt-4 flex flex-wrap items-center gap-2 text-sm text-white/70">
-  <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1">
-    Veteran-owned &amp; operated
-  </span>
-  <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1">
-    Dallas / DFW
-  </span>
-  <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1">
-    Clear pricing before work starts
-  </span>
-</div>
 
+          <!-- Trust line -->
+          <div class="mt-4 flex flex-wrap items-center gap-2 text-sm text-white/70">
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1">
+              Veteran-owned &amp; operated
+            </span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1">
+              Allen-based • Serving DFW
+            </span>
+            <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1">
+              Clear pricing before work starts
+            </span>
+          </div>
+
+          <!-- NEW: Service area block -->
+          <div class="mt-5 card p-5">
+            <div class="font-extrabold text-lg">Service area</div>
+            <p class="muted mt-1 text-sm">
+              Based in Allen, TX. Serving Dallas–Fort Worth including Plano, McKinney, Frisco, Richardson, Addison,
+              Carrollton, Garland, Irving, Grapevine, Lewisville, Denton, Arlington, Fort Worth, and nearby cities.
+              Remote support available across DFW.
+            </p>
+          </div>
 
           <div class="mt-6 flex flex-wrap gap-4 text-sm muted">
             <div class="flex items-center gap-2"><span class="pulseDot"></span> Typical response: quick during business hours</div>
@@ -379,7 +500,7 @@
     </div>
   </section>
 
-  <!-- Pricing (revamped but keeps your intent) -->
+  <!-- Pricing -->
   <section id="pricing" class="max-w-6xl mx-auto px-5 py-14">
     <div class="reveal">
       <div class="flex items-end justify-between gap-6 flex-wrap">
@@ -405,16 +526,15 @@
               <h3 class="text-2xl font-extrabold mt-3">Fast help when something breaks</h3>
               <p class="muted mt-2">We focus on fixing the problem first — not watching the clock.</p>
               <div class="mt-4 flex flex-wrap gap-2">
-  <span class="chip">Remote support from $80</span>
-  <span class="chip">On-site support from $105</span>
-</div>
-
+                <span class="chip">Remote support from $80</span>
+                <span class="chip">On-site support from $105</span>
+              </div>
             </div>
             <div class="rounded-2xl px-4 py-3 text-sm"
                  style="background: linear-gradient(135deg, rgba(249,115,22,.18), rgba(168,85,247,.16));
                         border: 1px solid rgba(255,255,255,.14);">
               <div class="font-extrabold">Upfront + approved</div>
-             <div class="muted text-xs mt-1">Remote from $80 • On-site from $105</div>
+              <div class="muted text-xs mt-1">Remote from $80 • On-site from $105</div>
             </div>
           </div>
 
@@ -432,7 +552,6 @@
           </div>
 
           <div class="mt-7 flex flex-wrap gap-3">
-            <!-- FIXED: these now call/text, not scroll -->
             <a class="btn btn-primary" href="tel:+12149973935">📞 Call or Text for Support</a>
             <a class="btn btn-secondary" href="sms:+12149973935?&body=Hi%20TexDesk%20-%20I%20need%20help%20with%20">💬 Text Support</a>
             <a class="btn btn-ghost" href="#contact">Send a Message</a>
@@ -512,7 +631,7 @@
     </div>
   </section>
 
-  <!-- Contact (keeps your Formspree + reCAPTCHA) -->
+  <!-- Contact -->
   <section id="contact" class="max-w-6xl mx-auto px-5 py-14">
     <div class="reveal card p-7">
       <div class="flex items-start justify-between gap-6 flex-wrap">
@@ -582,7 +701,7 @@
     </div>
   </footer>
 
-  <!-- Sticky Bottom Bar (always call/text, no scrolling) -->
+  <!-- Sticky Bottom Bar -->
   <div class="stickyBar">
     <div class="px-4 py-3 flex items-center justify-between gap-3 flex-wrap">
       <div class="flex items-center gap-3">
